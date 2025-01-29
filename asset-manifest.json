@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nasa-Ticket/static/css/main.ec7cf006.css",
+    "main.js": "/Nasa-Ticket/static/js/main.c0653ae9.js",
+    "static/media/mi.gif": "/Nasa-Ticket/static/media/mi.dfff52e4bf461318e48e.gif",
+    "static/media/io.jpg": "/Nasa-Ticket/static/media/io.58c73e7762fa487c7382.jpg",
+    "index.html": "/Nasa-Ticket/index.html",
+    "main.ec7cf006.css.map": "/Nasa-Ticket/static/css/main.ec7cf006.css.map",
+    "main.c0653ae9.js.map": "/Nasa-Ticket/static/js/main.c0653ae9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec7cf006.css",
+    "static/js/main.c0653ae9.js"
+  ]
+}
