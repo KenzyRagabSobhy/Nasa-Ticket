@@ -16,40 +16,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media only screen and(max-width:600px)
-{
-  .MobNav{
-    display: flex;
-  }
-  .NavContent{
-    display: none;
-  }
-}
-
-.App-header {
   background: linear-gradient(to right, #bdc3c7, #2c3e50);
   min-height: 100vh;
   display: flex;
@@ -57,12 +23,108 @@
   align-items: center;
   justify-content: center;
   color: white;
+  padding: 20px;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	box-sizing: border-box;
-	font-family: 'Ubuntu', sans-serif;
+/* ========== General Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* ========== Mobile (Up to 600px) ========== */
+@media only screen and (max-width: 600px) {
+  .App-header {
+    min-height: 100vh;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+
+  .MobNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .NavContent {
+    display: none;
+  }
+}
+
+/* ========== Tablets (600px - 1024px) ========== */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .App-header {
+    min-height: 90vh;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .App-logo {
+    height: 35vmin;
+  }
+
+  .MobNav {
+    display: none;
+  }
+
+  .NavContent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+/* ========== Laptops (1025px - 1440px) ========== */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .App-header {
+    min-height: 100vh;
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .App-logo {
+    height: 40vmin;
+  }
+
+  .NavContent {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+}
+
+/* ========== Large Screens (1440px and above) ========== */
+@media only screen and (min-width: 1441px) {
+  .App-header {
+    font-size: 22px;
+    padding: 40px;
+  }
+
+  .App-logo {
+    height: 45vmin;
+  }
+
+  .NavContent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+}
+
+/* Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

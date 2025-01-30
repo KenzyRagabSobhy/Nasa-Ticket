@@ -296,7 +296,7 @@ function InputForm() {
                         {flightFields(1)}
                         {(flightCount === 2 || flightCount === 3 ) && flightFields(2)}
                         {(flightCount === 3 || flightCount === 4 ) && flightFields(3)}
-                        <div className="addDeleteWrap">
+                        <div className="submitWrap">
                             <button type="button" className="submit" disabled={flightCount === 3} style={{marginRight: '25px'}} onClick={() => setflightCount(flightCount + 1)}> <i className="fas fa-plus" style={{color: flightCount === 5 ? 'lightgray' : 'gray'}}></i> Add</button>
                             <button type="button" className="submit" disabled={flightCount === 1} onClick={() => clearflight()}> <i className="fas fa-trash" style={{color: flightCount === 1 ? 'lightgray' : 'gray'}}></i>Delete</button>
                         </div>
